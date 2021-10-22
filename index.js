@@ -13,9 +13,41 @@ app.get('/new-route', (req, res) => {
 
 })
 app.get('/products', (req, res) => {
-    res.json({
+    res.json([
+        {
         name: 'Product1',
         price: 3000
+    }, {
+        name: 'Product2',
+        price: 2000
+    }])
+
+})
+
+app.get('/products/:id', (req, res) => {
+    //const id = req.params.id
+
+    //Destrcuture
+    const {id} = req.params
+    res.json({
+        id,
+        name: 'Product2',
+        price: 2000
+    })
+
+})
+
+
+app.get('/categories/:categoryId/products/:productId', (req, res) => {
+    //const id = req.params.id
+
+    //JS Destructure
+    const {categoryId, productId} = req.params
+    res.json({
+        categoryId,
+        productId,
+        name: 'Product2',
+        price: 2000
     })
 
 })
