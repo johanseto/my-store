@@ -57,16 +57,14 @@ router.put('/:id', async (req, res) => {
 })
 
 
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', async (req, res, next) => {
     try {
     const{ id } = req.params
     const body = req.body
     const product = await service.updatePatch(id, body)
     res.json(product)
     } catch (error){
-        res.status(404).json({
-            message: error.message
-        })
+       next(error)
     }
    
 })

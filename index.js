@@ -1,7 +1,7 @@
 const express = require('express')
 const routerApi = require('./routes') //by default search index.js
 
-const { logErrors, errorHandler } = require('./middlewares/error.handler');
+const { logErrors, errorHandler, boomErrorHandler } = require('./middlewares/error.handler');
 
 
 const app = express()
@@ -27,4 +27,5 @@ app.listen(port, () => {
 
 routerApi(app)
 app.use(logErrors) //Take care of the order they would be executed.
+app.use(boomErrorHandler)
 app.use(errorHandler)
