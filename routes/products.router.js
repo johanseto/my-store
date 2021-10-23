@@ -50,33 +50,26 @@ router.post('/',(req, res) => {
 router.put('/:id',(req, res) => {
     const{ id } = req.params
     const body = req.body
-    res.json({
-        message: 'update',
-        data: body,
-        id,
-    })
+    const product = service.updatePatch(id, body)
+    res.json(product)
 })
 
 
 router.patch('/:id',(req, res) => {
     const{ id } = req.params
     const body = req.body
-    res.json({
-        message: 'update',
-        data: body,
-        id,
-    })
+    const product = service.updatePatch(id, body)
+    res.json(product)
+   
 })
 
 
 
 router.delete('/:id',(req, res) => {
     const{ id } = req.params
-    
-    res.json({
-        message: 'deleted',
-        id,
-    })
+    const body = req.body
+    const product = service.delete(id)
+    res.json(product)
 })
 
 
