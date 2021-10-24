@@ -8,7 +8,7 @@ const { logErrors, errorHandler, boomErrorHandler } = require('./middlewares/err
 const app = express()
 
 const port = process.env.PORT || 3000 //iF IS DEFINED IN ENV THE PORT.
-const host = '0.0.0.0'
+
 app.use(express.json())
 const whitelist = ['http://localhost:8080', 'https://myapp.co', 'http://127.0.0.1:5500']//live server from vscode
 const options = {
@@ -32,12 +32,12 @@ app.get('/new-route', (req, res) => {
 })
 
 
+//const host = '0.0.0.0' //heroku doesnt know localhost host. But assume the 0.0.0.0 port
 
-
-app.listen(port, host, () => {
+app.listen(port, () => {
     console.log("my port" + port)
     
-    console.log("my host" + host)
+    //console.log("my host" + host)
 })
 
 routerApi(app)
