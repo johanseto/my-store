@@ -36,9 +36,12 @@ app.get('/new-route', (req, res) => {
 
 app.listen(port, host, () => {
     console.log("my port" + port)
+    
+    console.log("my host" + host)
 })
 
 routerApi(app)
+
 app.use(logErrors) //Take care of the order they would be executed.
 app.use(boomErrorHandler)
 app.use(errorHandler)
