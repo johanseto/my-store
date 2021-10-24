@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const routerApi = require('./routes') //by default search index.js
 
 const { logErrors, errorHandler, boomErrorHandler } = require('./middlewares/error.handler');
@@ -9,6 +10,18 @@ const app = express()
 const port = 3000
 
 app.use(express.json())
+const whitelist = ['http://localhost:8080', 'https://myapp.co', 'http://127.0.0.1:5500']//live server from vscode
+const options = {
+    origin: (origin, callback) => {
+        if (whitelist.includes(origin) || !origin){
+            callback(null, true)
+        } else {
+            callback(new Error('not allowed'))
+        }
+    }
+}
+//app.use(cors())//accept whatelse origin
+app.use(cors(options))//accept whatelse origin
 app.get('/', (req, res) => {
     res.send('hello server in express')
 })
