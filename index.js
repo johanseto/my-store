@@ -7,8 +7,8 @@ const { logErrors, errorHandler, boomErrorHandler } = require('./middlewares/err
 
 const app = express()
 
-const port = 3000
-
+const port = process.env.PORT || 3000 //iF IS DEFINED IN ENV THE PORT.
+const host = '0.0.0.0'
 app.use(express.json())
 const whitelist = ['http://localhost:8080', 'https://myapp.co', 'http://127.0.0.1:5500']//live server from vscode
 const options = {
@@ -34,7 +34,7 @@ app.get('/new-route', (req, res) => {
 
 
 
-app.listen(port, () => {
+app.listen(port, host, () => {
     console.log("my port" + port)
 })
 
