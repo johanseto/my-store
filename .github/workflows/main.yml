@@ -34,8 +34,13 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
-          
-      - name: Auto Changelog
-        uses: ardalanamini/auto-changelog@v1.1.0
 
+
+      - name: Auto Changelog
+        # You may pin to the exact commit or the version.
+        # uses: ardalanamini/auto-changelog@6edbc48bf09f362c278bcb72a8453a1e4ba5850b
+        uses: ardalanamini/auto-changelog@v1.1.0
+        with:
+          # Github token
+          token: ${{ secrets.MY_TOKEN || github.token }}
+          # Exclude selected commit types (comma separated)
