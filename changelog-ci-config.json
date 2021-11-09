@@ -18,7 +18,7 @@
     },
     {
       "title": "New Features",
-      "labels": ["feature"]
+      "labels": ["feature", "feat"]
     },
     {
       "title": "Documentation Updates",
