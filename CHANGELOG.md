@@ -1,5 +1,13 @@
 # Version: v0.0.7
 
+
+#### Bug Fixes
+
+* [#15](https://github.com/johanv26/my-store/pull/15): Release v0.0.6
+
+
+# Version: v0.0.7
+
 * [6c2f546](https://github.com/johanv26/my-store/commit/6c2f5468ffcd2df1db20f0f5d477f2706b2a7e51): feat: solving commits
 
 
