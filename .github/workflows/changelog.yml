@@ -2,7 +2,7 @@ name: Changelog CI
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   push:
     branches: [ '**' ]
 
