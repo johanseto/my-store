@@ -1,2 +1,2 @@
 v0.0.1
-last_release 
+last_release = 
