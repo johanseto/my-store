@@ -1,3 +1,17 @@
+# Version: v0.1.4 (2021-11-09)
+
+
+#### Bug Fixes
+
+* [#19](https://github.com/johanv26/my-store/pull/19): Update releases.txt
+
+#### Unlabeled Changes
+
+* [#16](https://github.com/johanv26/my-store/pull/16): Release v0.0.7
+* [#17](https://github.com/johanv26/my-store/pull/17): Update releases.txt
+* [#18](https://github.com/johanv26/my-store/pull/18): Release v0.1.2 (2021-11-09)
+
+
 # Version: v0.1.2 (2021-11-09)
 
 
