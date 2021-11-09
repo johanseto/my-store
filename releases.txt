@@ -1,1 +1,3 @@
 this for release v 0.0.6
+
+new feat to releas.
