@@ -21,4 +21,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           files: README.md
-          release: v0.1.2
+          release: v0.1.3
