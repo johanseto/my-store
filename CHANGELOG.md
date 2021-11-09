@@ -1,6 +1,10 @@
 # Version: v0.0.4
 
 
+
+# Version: v0.0.4
+
+
 #### Unlabeled Changes
 
 * [#1](https://github.com/johanv26/my-store/pull/1): Release v0.0.1
