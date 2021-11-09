@@ -1,18 +1,12 @@
-name: Changelog CI
-
 on:
   pull_request:
-    types: [ opened ]
-  push:
-    branches: [ '**' ]
+    branches: [ master ]
 
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
+	@@ -16,3 +14,5 @@ jobs:
 
       - name: Run Changelog CI
         uses: saadmk11/changelog-ci@v1.0.0
+        with:
+          config_file: changelog-ci-config.json
