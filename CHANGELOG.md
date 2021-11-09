@@ -1,3 +1,8 @@
+# Version: v0.0.7
+
+* [6c2f546](https://github.com/johanv26/my-store/commit/6c2f5468ffcd2df1db20f0f5d477f2706b2a7e51): feat: solving commits
+
+
 # Version: v0.0.4
 
 * [57bea87](https://github.com/johanv26/my-store/commit/57bea879e4466e5c19211c563905f0d7d3e2fced): Update README.md
