@@ -8,11 +8,11 @@ on:
 jobs:
   merge_job:
     # this job will only run if the PR has been merged
-    if: github.event.pull_request.merged == true && match(github.event.pull_request.name,"v?([0-9]{1,3})+[.]+([0-9]{1,3})+[.]+([0-9]{1,3})\\s\\(\\d{4}-\\d{1,2}-\\d{1,2}\\)")
+    if: github.event.pull_request.merged == true 
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo PR #${{ github.event.number }} has been merged
+        echo PR #${{ github.event.pull_request.name}} has been merged
   close_job:
     # this job will only run if the PR has been closed without being merged
     if: github.event.pull_request.merged == false
