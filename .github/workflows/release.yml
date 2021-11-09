@@ -11,8 +11,15 @@ jobs:
     if: github.event.pull_request.merged == true && contains(github.event.pull_request.title, 'Release')
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        echo PR #${{ github.event.pull_request.title}} has been merged
+    - name:  run the merged comprobation.
+      run: |
+          echo PR #${{ github.event.pull_request.title}} has been merged
+        
+    - name: Update release
+      uses: johnwbyrd/update-release@v1.0.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        files: README.md
   close_job:
     # this job will only run if the PR has been closed without being merged
     if: github.event.pull_request.merged == false 
@@ -20,3 +27,5 @@ jobs:
     steps:
     - run: |
         echo PR #${{ github.event.number }} has been closed without being merged
+        
+        
