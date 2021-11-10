@@ -17,12 +17,14 @@ jobs:
           echo "$WORKSPACE_DIRECTORY" 
           echo "$GITHUB_ACTION_PATH"
           echo "$GITHUB_EVENT_PATH"
+    - name: Checkout
+      uses: actions/checkout@v2
         
     - name: Update release
       uses: johnwbyrd/update-release@v1.0.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        files: johanv26/my-store/README.md
+        files: README.md
         release: github.event.pull_request.title
         
         
