@@ -4,4 +4,4 @@ Also this is for testing github changelog file.
 Working in Github actions.
 Ma niggga
 ma pir
-v0.1.8
+v0.1.8 (2021-11-10)
