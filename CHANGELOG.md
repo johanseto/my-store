@@ -1,3 +1,29 @@
+# Version: v0.1.8 (2021-11-10)
+
+
+#### Bug Fixes
+
+* [#19](https://github.com/johanv26/my-store/pull/19): Update releases.txt
+
+#### Unlabeled Changes
+
+* [#17](https://github.com/johanv26/my-store/pull/17): Update releases.txt
+* [#18](https://github.com/johanv26/my-store/pull/18): Release v0.1.2 (2021-11-09)
+* [#29](https://github.com/johanv26/my-store/pull/29): Release v0.1.5
+* [#28](https://github.com/johanv26/my-store/pull/28): Release v0.1.4
+* [#23](https://github.com/johanv26/my-store/pull/23): Update README.md
+* [#24](https://github.com/johanv26/my-store/pull/24): Update .gitignore
+* [#26](https://github.com/johanv26/my-store/pull/26): Update README.md
+* [#25](https://github.com/johanv26/my-store/pull/25): Update README.md
+* [#27](https://github.com/johanv26/my-store/pull/27): Release
+* [#16](https://github.com/johanv26/my-store/pull/16): Release v0.0.7
+* [#21](https://github.com/johanv26/my-store/pull/21): feat: add trigger for close  pr.
+* [#20](https://github.com/johanv26/my-store/pull/20): Release-v0.1.4 (2021-11-09)
+* [#22](https://github.com/johanv26/my-store/pull/22): Release v9.9.9 2021-11-09
+* [#30](https://github.com/johanv26/my-store/pull/30): Release 
+* [#31](https://github.com/johanv26/my-store/pull/31): Release
+
+
 # Version: v0.1.4 (2021-11-09)
 
 
