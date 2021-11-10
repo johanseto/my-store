@@ -25,8 +25,8 @@ jobs:
       uses: johnwbyrd/update-release@v1.0.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        files: README.md
-        release: github.event.pull_request.title
+        files: README.md CHANGELOG.md
+        release: ${{github.event.pull_request.title}}
         
         
         
