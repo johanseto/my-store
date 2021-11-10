@@ -26,7 +26,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         files: README.md CHANGELOG.md
-        #release: ${{ github.event.pull_request.title }}
+        release: $v0.2.0
         
         
         
