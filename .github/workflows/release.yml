@@ -14,6 +14,9 @@ jobs:
     - name:  run the merged comprobation.
       run: |
           echo PR #${{ github.event.pull_request.title}} has been merged
+          echo "$WORKSPACE_DIRECTORY" 
+          echo "$GITHUB_ACTION_PATH"
+          echo "$GITHUB_EVENT_PATH"
         
     - name: Update release
       uses: johnwbyrd/update-release@v1.0.0
