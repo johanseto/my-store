@@ -13,7 +13,7 @@ jobs:
     steps:
     - name:  run the merged comprobation.
       run: |
-          echo PR #${{ github.event.pull_request.title}} has been merged
+          echo PR #${{ github.event.pull_request.title }} has been merged
           echo "$GITHUB_WORKSPACE" 
           echo "$WORKSPACE_DIRECTORY" 
           echo "$GITHUB_ACTION_PATH"
@@ -26,7 +26,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         files: README.md CHANGELOG.md
-        release: ${{github.event.pull_request.title}}
+        release: ${{ github.event.pull_request.title }}
         
         
         
