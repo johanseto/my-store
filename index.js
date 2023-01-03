@@ -23,11 +23,11 @@ const options = {
 //app.use(cors())//accept whatelse origin
 app.use(cors(options))//accept whatelse origin
 app.get('/', (req, res) => {
-    res.send('hello server in express')
+    res.send('hello server in express.js')
 })
 
 app.get('/new-route', (req, res) => {
-    res.send('hello i am a new route or endpoint')
+    res.send('hello i am a new route or endpoint.')
 
 })
 
